@@ -20,7 +20,6 @@
 </div>
 
 
-
 <main style="
     margin: 0 auto;
     width: 940px;">
@@ -33,7 +32,7 @@
      style="
     display: block;
     font-size: 20px;
-    margin: 0 0 10px;">
+    margin: 0 0 10px;" required placeholder>
         
         <label for="Email"  style="
     display: block;
@@ -42,7 +41,7 @@
         <input type="text" id= "Email"  style="
     display: block;
     font-size: 20px;
-    margin: 0 0 10px;">
+    margin: 0 0 10px;" required placeholder="seuemail@dominio.com">
         
         <label for="telefone" style="
     display: block;
@@ -51,15 +50,86 @@
         <input type="text" id= "telefone" style="
     display: block;
     font-size: 20px;
-    margin: 0 0 10px;">
+    margin: 0 0 10px;" required placeholder="(XX) XXXXX-XXXX">
         
-        <input type= "submit" value= "Enviar Fomulário" style="
+        <label for="mensagem" style="
     display: block;
     font-size: 20px;
+    margin: 0 0 10px;
+">Mensagem</label> <textarea cols="50" rows= "10" id="mensagem" required placeholder> </textarea>
+        
+      <div>
+        <p>Como prefere o nosso contato?</p>
+        <label for="radio-email" style="display: block; "><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+       
+        
+          <label for="radio-telefone" style="display: block; "><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+      
+        
+        
+          <label for="radio-whatsapp" style="display: block; "><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
+
+     </div>
+        
+        <div>
+    <p>Qual horário prefere ser atendido?</p>
+    <select style="
     margin: 0 0 10px;">
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+    </select>
+</div>
+        
+        <label><input type="checkbox" style="
+    margin: 0 0 10px;">Gostaria de receber nossas novidades por Email?</label>
+            
+        <input type= "submit" value= "Enviar Fomulário" style="
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px;
+    width: 300px;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: 1s background:darkorange;
+    ">
         
         </form>
  </main>
+  
+        
+        <table style="margin: 20px 0 40px;">
+    <thead style="background: #555555;
+    color: white;
+    font-weight: bold;">
+        <tr  style="border: 1px solid #000000;
+    padding: 8px 15px;">
+            <th>Dia</th>
+            <th>Horário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border: 1px solid #000000;
+    padding: 8px 15px;">
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr style="border: 1px solid #000000;
+    padding: 8px 15px;">
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+        <tr style="border: 1px solid #000000;
+    padding: 8px 15px;">
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+        </tr>
+    </tbody>
+</table>
 
 <footer style= "text-align: center; background: #000000">
     <img src="Inserir um título.png">
